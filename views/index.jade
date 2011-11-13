@@ -1,0 +1,10 @@
+#posts
+  ul#sortable.post
+    - each plan in plans
+      li.title.sortable
+        h1
+          a(href="/plans/"+ plan._id.toHexString())!= plan.title
+        span.button
+          a.orange.awesome(href="/plans/edit/"+ plan._id.toHexString())!= " edit"
+        span.button
+          a.red.awesome(href="/plans/remove/"+ plan._id.toHexString())!= " delete"

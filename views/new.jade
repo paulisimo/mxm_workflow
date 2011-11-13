@@ -1,0 +1,115 @@
+form( method="post", action="/plans" )
+    div
+        h1 Overview
+        div
+            label Title
+            br
+            input( name="title", rows=2, id="editArticleTitle")
+        div
+            label Project
+            br
+            input( name="project", rows=3, id="editArticleProject")
+        div
+            label Client
+            br
+            input( name="client", rows=3, id="editArticleClient")
+        div
+            label Value
+            br
+            input( name="value", rows=3, id="editArticleClient")
+        div
+            label Business Objectives
+            br
+            textarea( name="business_ob", rows=3, id="editArticleClient")
+        h1 Needs
+        div
+            label Requirements
+            br
+            textarea( name="requirements", rows=3, id="editArticleBody")
+        div
+            label Interation Design
+            br
+            select(name="design_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="design_days", rows=3, id="editArticleBody")
+        div
+            label Front-end
+            br
+            select(name="frontend_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="frontend_days", rows=3, id="editArticleBody")
+        div
+            label Back-end
+            br
+            select(name="backend_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="backend_days", rows=3, id="editArticleBody")
+        div
+            label Service design
+            br
+            select(name="service_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="service_days", rows=3, id="editArticleBody")
+        div
+            label Producer
+            br
+            select(name="producer_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="producer_days", rows=3, id="editArticleBody")
+        div
+            label Lead Developer / Oversight
+            br
+            select(name="leaddev_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="leaddev_days", rows=3, id="editArticleBody")
+        div
+            label Partner
+            br
+            select(name="partner_days")
+                  option(value="Select") -- Select --
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+            //input( name="partner_days", rows=3, id="editArticleBody")
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")

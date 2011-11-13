@@ -1,0 +1,136 @@
+form( method="post", action="/plans/" + plan._id)
+    div
+        h1 Overview
+        div
+            label Title
+            br
+            input(type="text", name="title", id="editArticleTitle", value=plan.title)
+              //!{ plan.title }
+        div
+            label Project
+            br
+            input(type="text", name="project", id="editArticleProject", value=plan.project)
+              //!{ plan.project }
+        div
+            label Client
+            br
+            input(type="text", name="client", id="editArticleClient", value=plan.client)
+              //!{ plan.client }
+        div
+            label Value
+            br
+            input( name="value", rows=3, id="editArticleClient", value=plan.value)
+              //!{ plan.value }
+        div
+            label Business Objectives
+            br
+            textarea( name="business_ob", rows=3, id="editArticleClient", value=plan.business_ob)
+              //!{ plan.business_ob }
+        h1 Needs
+        div
+            label Requirements
+            br
+            textarea( name="requirements", rows=3, id="editArticleBody", value=plan.requirements)
+              //!{ plan.requirements }
+        div
+            label Interation Design
+            br
+            //input(type="select" name="design_days", rows=3, id="editArticleBody")
+            //  !{ plan.design_days }
+            select(name="design_days")
+                  option(value=plan.design_days) !{plan.design_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Front-end
+            br
+            //input( name="frontend_days", rows=3, id="editArticleBody")
+              //!{ plan.frontend_days }
+            select(name="frontend_days")
+                  option(value=plan.frontend_days) !{plan.frontend_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Back-end
+            br
+            //input( name="backend_days", rows=3, id="editArticleBody")
+              //!{ plan.backend_days }
+            select(name="backend_days")
+                  option(value=plan.backend_days) !{plan.backend_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Service design
+            br
+            //input( name="service_days", rows=3, id="editArticleBody")
+              //!{ plan.service_days }
+            select(name="service_days")
+                  option(value=plan.backend_days) !{plan.service_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Producer
+            br
+            //input( name="producer_days", rows=3, id="editArticleBody")
+              //!{ plan.producers_days }
+            select(name="producer_days")
+                  option(value=plan.producer_days) !{plan.producer_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Lead Developer / Oversight
+            br
+            //input( name="leaddev_days", rows=3, id="editArticleBody")
+              //!{ plan.leaddev_days }
+            select(name="leaddev_days")
+                  option(value=plan.leaddev_days) !{plan.leaddev_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div
+            label Partner
+            br
+            //input( name="partner_days", rows=3, id="editArticleBody")
+              //!{ plan.partner_days }
+            select(name="partner_days")
+                  option(value=plan.partner_days) !{plan.partner_days}
+                  option(value="") ---
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")
+

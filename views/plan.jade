@@ -1,0 +1,54 @@
+#post
+  span.button
+    a.orange.awesome(href="/plans/edit/"+ plan._id.toHexString())!= " edit"
+
+  p.section Title
+  h1= plan.title
+  
+  p.section Client
+  h1= plan.client
+  
+  p.section Value £
+  h1= plan.value
+  
+  p.section Business Objectives
+  h1= plan.business_ob
+  
+  p.section Planned discovery period
+  h1= plan.discovery_weeks
+  
+  p.section Number of iterations
+  h1= plan.iteration_weeks
+  
+  p.section Start date
+  h1= plan.start_date
+  
+  p.section End date
+  h1= plan.end_date
+  
+  p.section Vision for work
+  h1= plan.vision
+  
+  p.section Requirements
+  h1= plan.requirements
+  
+  p.section Design days
+  h1= plan.design_days
+  
+  p.section Frontend days
+  h1= plan.frontend_days
+  
+  p.section Back-end days
+  h1= plan.backend_days
+  
+  p.section Service design days
+  h1= plan.service_days
+  
+  p.section Producers days
+  h1= plan.producer_days
+  
+  p.section Lead dev oversight
+  h1= plan.leaddev_days
+  
+  p.section Partner days
+  h1= plan.partner_days
